@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ramz Parallax JS</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo">Logo</a>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">Moon Light</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>Parallax Scroll Effect</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos quisquam vel et blanditiis, molestiae eum ipsam quas quaerat perferendis aperiam.
+                Similique animi nobis nesciunt soluta excepturi, rerum cupiditate voluptatibus molestias. Lorem ipsum tol tol anjay mabarrr Lorem ipsum dolor sit amet 
+                consectetur adipisicing elit. Eos ut similique omnis provident dolorum? Quo vitae, amet nobis sed, quidem id animi recusandae dolorem vel voluptates consequuntur, 
+                maiores minus nesciunt! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur provident sed eos, aspernatur, quo est repellat assumenda laudantium 
+                dolorem culpa accusantium. Excepturi cumque obcaecati unde, consequuntur eius nihil vero recusandae.<br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt 
+                qui assumenda veritatis dolores debitis cupiditate eos cumque saepe est, doloribus, distinctio repudiandae praesentium! Aperiam nesciunt ullam quidem incidunt placeat quia 
+                vitae iusto architecto at blanditiis, rerum aspernatur earum quo eveniet natus sed cum deleniti sit animi! Dicta libero accusamus eaque harum corporis modi animi doloribus 
+                excepturi unde sit reprehenderit beatae illo tenetur nesciunt consequuntur expedita saepe vero magni ipsum error deserunt, sapiente magnam temporibus quod. Animi inventore 
+                quisquam in facilis cupiditate ratione optio modi accusamus enim, commodi ipsa suscipit velit, consectetur earum saepe fugit iste maxime soluta cumque? Tempore, ratione!<br><br>Lorem 
+                ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab tenetur odit numquam sequi voluptatem deleniti qui harum molestias nihil aut quas fugiat? Placeat, sapiente praesentium 
+                mollitia eaque soluta ullam facere aspernatur dolorem quasi sequi. Iusto sed, assumenda reiciendis totam velit fugit dicta magnam ipsum minus eum labore, laborum fugiat porro quas.
+                Minus vitae sunt nesciunt necessitatibus, eligendi sit quod placeat aspernatur optio magnam, dolorem, adipisci ab nobis? Deserunt placeat facere tenetur inventore adipisci quibusdam 
+                magnam quas excepturi fugiat ipsam autem suscipit sint blanditiis repellat necessitatibus consequuntur sed velit, iure molestiae modi harum quaerat? Sit quis tempore repudiandae ullam?
+                Dolorem!<br><br>Lorem 
+                ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab tenetur odit numquam sequi voluptatem deleniti qui harum molestias nihil aut quas fugiat? Placeat, sapiente praesentium 
+                mollitia eaque soluta ullam facere aspernatur dolorem quasi sequi. Iusto sed, assumenda reiciendis totam velit fugit dicta magnam ipsum minus eum labore, laborum fugiat porro quas.
+                Minus vitae sunt nesciunt necessitatibus, eligendi sit quod placeat aspernatur optio magnam, dolorem, adipisci ab nobis? Deserunt placeat facere tenetur inventore adipisci quibusdam 
+                magnam quas excepturi fugiat ipsam autem suscipit sint blanditiis repellat necessitatibus consequuntur sed velit, iure molestiae modi harum quaerat? Sit quis tempore repudiandae ullam?
+                Dolorem!<br><br>Lorem 
+                ipsum dolor sit amet consectetur adipisicing elit. Ipsam, ab tenetur odit numquam sequi voluptatem deleniti qui harum molestias nihil aut quas fugiat? Placeat, sapiente praesentium 
+                mollitia eaque soluta ullam facere aspernatur dolorem quasi sequi. Iusto sed, assumenda reiciendis totam velit fugit dicta magnam ipsum minus eum labore, laborum fugiat porro quas.
+                Minus vitae sunt nesciunt necessitatibus, eligendi sit quod placeat aspernatur optio magnam, dolorem, adipisci ab nobis? Deserunt placeat facere tenetur inventore adipisci quibusdam 
+                magnam quas excepturi fugiat ipsam autem suscipit sint blanditiis repellat necessitatibus consequuntur sed velit, iure molestiae modi harum quaerat? Sit quis tempore repudiandae ullam?
+                Dolorem!</p>
+        </div>
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_front = document.getElementById('mountains_front');
+            let mountains_behind = document.getElementById('mountains_behind');
+
+            window.addEventListener('scroll', function() {
+                let value = window.scrollY;
+                stars.style.left = value * 0.25 + 'px';
+                moon.style.top = value * 1.05 + 'px';
+                mountains_behind.style.top = value * 0.5 + 'px';
+                mountains_front.style.top = value * 0 + 'px';
+                text.style.marginRight = value * 4 + 'px';
+                text.style.marginTop = value * 1.5 + 'px';
+                btn.style.marginTop = value * 1.5 + 'px';
+            })
+        </script>
+    </body>
+</html>
