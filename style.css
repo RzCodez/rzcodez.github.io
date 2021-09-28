@@ -9,5 +9,10 @@
 }
 body
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     min-height: 100vh;
 }
+span{animation:blink 1s infinite}@keyframes blink{to{opacity:.0;}}
