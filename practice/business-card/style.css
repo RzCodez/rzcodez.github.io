@@ -59,7 +59,7 @@ body {
     height: 100%;
     opacity: .56;
     filter: contrast(190%);
-    background: url(/images/image-header-desktop.jpg) no-repeat center center;
+    background: url(image-header-desktop.jpg) no-repeat center center;
     background-size: cover;
     border-radius: 0 20px 20px 0;
     overflow: hidden;
