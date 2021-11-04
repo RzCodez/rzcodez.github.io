@@ -90,6 +90,21 @@
 			</svg>
 			  
 		</div>
+		<div class="translate-box">
+			<div class="translator">
+			  <img src="https://seeklogo.com/images/G/google-translate-logo-42DAD4AA91-seeklogo.com.png" width="30px" height="30px" />
+			</div>
+			<a href="#">
+			  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Flag_of_Indonesia.svg/2560px-Flag_of_Indonesia.svg.png" class="language" width="50px" height="50px" />
+			</a>
+			<a href="#">
+			  <img src="https://seeklogo.com/images/U/united-kingdom-flag-logo-1088704B5E-seeklogo.com.png" class="language" width="50px" height="50px" />
+			</a>
+			<a href="#">
+			  <img src="https://seeklogo.com/images/J/Japan-logo-95CBBFE790-seeklogo.com.png" class="language" width="50px" height="50px" />
+			</a>
+			
+		  </div>
 		<div class="home" id="h">
 			<div class="welcome" data-aos="fade-right" data-aos-duration="1000">
 				<h1 class="line line-underline animate__animated animate__rubberBand animate__fadeIn title">Hello Everyone!</h1>
@@ -372,6 +387,14 @@
 	<script>
 		AOS.init();
 	</script>
+	<script>
+		const toggle = document.querySelector(".translator");
+		const translateToggle = document.querySelector(".translate-box");
+		toggle.addEventListener('click', function(){
+			translateToggle.classList.toggle('active');
+			toggle.classList.toggle('active');
+		})
+  	</script>
 	<!-- Scripts -->
 </body>
 </html>
