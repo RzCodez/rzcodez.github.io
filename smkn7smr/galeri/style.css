@@ -362,6 +362,16 @@ footer .grid-items a{
         font-family: Roboto;
         font-weight: var(--Roboto-Regular);
     }
+    .school-galleries{
+        padding: 1em;
+        max-width: 100%;
+        min-height: 80vh;
+        font-family: Poppins;
+        font-weight: var(--Poppins-SemiBold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 
