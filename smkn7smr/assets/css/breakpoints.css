@@ -1,0 +1,848 @@
+/* 1280px width */
+@media all and (max-width: 1280px){
+
+    /* Info Section */
+
+    .info-terkini{
+        width: 30rem;
+        height: 350px;
+        padding-left: 10px;
+    }
+    .info-terkini h1{
+        font-family: Poppins;
+        font-weight: var(--Poppins-SemiBold);
+    }
+    .info-terkini .image-event{
+        width: 100%;
+        height: 301px;
+        overflow: hidden;
+        display: flex;
+    }
+    .info-terkini .image-event .img h1{
+        position: absolute;
+        bottom: 60px;
+        left: 10px;
+        color: var(--white-default);
+        font-size: 1rem;
+    }
+    .info-terkini .image-event .img a{
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        font-family: Roboto;
+        font-weight: var(--Roboto-Bold);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 40px;
+        color: var(--white-default);
+        font-size: 14px;
+        background: var(--blue-navbar-secondary);
+    }
+    .info-terkini .image-event .image-event1{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: linear-gradient(180deg, rgba(131,58,180,0) 0%, rgba(0,0,3,0.9066001400560224) 100%), url(../../media/jpg/iht_hotel-img.png) repeat;
+    }
+    .info-terkini .image-event .image-event2{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: linear-gradient(180deg, rgba(131,58,180,0) 0%, rgba(0,0,3,0.9066001400560224) 100%), url(../../media/jpg/img-8.png) no-repeat;
+        background-size: cover;
+    }
+    .info-terkini .image-event .image-event3{
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background: linear-gradient(180deg, rgba(131,58,180,0) 0%, rgba(0,0,3,0.9066001400560224) 100%), url(../../media/jpg/img-1.png) no-repeat;
+        background-size: cover;
+    }
+    .info-terkini .image-event .image-event3 h1 {
+        bottom: 65px;
+    }
+    .info-terkini .image-event .image-event2 h1 {
+        bottom: 65px;
+    }
+    .info-lainnya{
+        width: 39.5rem;
+        height: 350px;
+        margin-left: 10px;
+        /* background: green; */
+    }
+    .info-lainnya h1{
+        font-family: Poppins;
+        font-weight: var(--Poppins-SemiBold);
+    }
+    .info-lainnya .info-lists{
+        width: 100%;
+        height: 400px;
+    }
+    .info-lainnya .info-lists .info-event .image{
+        width: 130px;
+        height: 97px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #b1b0b0;
+    }
+    .info-lainnya .info-lists .info-event .image img {
+        width: 50px;
+    }
+    .info-lainnya .info-lists .info-event {
+        display: flex;
+        align-items: center;
+    }
+    .info-lainnya .info-lists .info-event .description{
+        margin-left: 10px;
+    }
+    .info-lainnya .info-lists .info-event .description h1 {
+        font-size: 1.3rem;
+        font-family: Roboto;
+        font-weight: var(--Roboto-Bold);
+    }
+    .info-lainnya .info-lists .info-event .description p {
+        font-size: 0.92rem;
+        font-family: Roboto;
+        font-weight: var(--Roboto-Regular);
+    }
+
+    /* Info Section */
+
+    /* Galeri Sekolah */
+
+    .school-galleries{
+        font-family: Poppins;
+        font-weight: var(--Poppins-SemiBold);
+        max-width: 100%;
+        min-height: 80vh;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 4%;
+        /* display: flex;
+        align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+    }
+    /* Galeri Sekolah */
+
+    /* Profil Sekolah */
+    .school-profile{
+        max-width: 100%;
+        min-height: 50vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .school-profile .headlines{
+        width: 45%;
+        word-break: break-word;
+    }
+    .school-profile .headlines h1 {
+        margin-block-start: 0;
+        font-size: 2em;
+        position: relative;
+        font-family: roboto;
+        color: var(--blue-navbar-secondary);
+        font-weight: var(--Roboto-Bold);
+    }
+    #line-profile {
+        margin-top: 5px;
+        width: 200px;
+        height: 5px;
+        background: var(--blue-navbar-secondary);
+        transition: width 500ms ease-in-out;
+    }
+    .school-profile .headlines p{
+        word-break: break-word;
+        width: 40vw;
+        font-family: roboto;
+        font-weight: var(--Roboto-Regular);
+        margin-top: 30px;
+    }
+    .school-profile .photos{
+        margin-left: 30px;
+        position: relative;
+        width: 30vw;
+        height: 36vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .school-profile .photos .photo-carousel{
+        width:25vw;
+        height: 30vh;
+        /* background: lime; */
+        overflow: hidden;
+        display: flex;
+        position: relative;
+    }
+    .d-pattern{
+        position: absolute;
+        bottom: 0;
+        width: 6.8rem;
+        left: 0;
+    }
+    .d-pattern2{
+        position: absolute;
+        width: 6.8rem;
+        top: 0;
+        right: 0;
+    }
+    .frame-top{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .frame-bottom{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }    
+    /* Profil Sekolah */
+
+    /* Footer class */
+    .footer{
+        font-family: roboto;
+        font-weight: var(--Roboto-Regular);
+        color: var(--white-default);
+        padding-top: 2em;
+        padding-bottom: 1em;
+        background: var(--blue-navbar-primary);
+        max-width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* Footer class */
+}
+/* 1280px width */
+
+/* 1114px width */
+@media all and (max-width: 1114px){
+    /* Info lainnya */
+    
+    .info-lainnya{
+        width: 39.5rem;
+        height: 350px;
+        margin-left: 10px;
+        /* background: green; */
+        padding-right: 10px;
+    }
+    .info-lainnya h1{
+        font-family: Poppins;
+        font-weight: var(--Poppins-SemiBold);
+    }
+    .info-lainnya .info-lists{
+        width: 100%;
+        height: 400px;
+    }
+    .info-lainnya .info-lists .info-event .image{
+        width: 130px;
+        height: 97px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #b1b0b0;
+    }
+    .info-lainnya .info-lists .info-event .image img {
+        width: 50px;
+    }
+    .info-lainnya .info-lists .info-event {
+        display: flex;
+        align-items: center;
+    }
+    .info-lainnya .info-lists .info-event .description{
+        margin-left: 10px;
+    }
+    .info-lainnya .info-lists .info-event .description h1 {
+        font-size: 1.3rem;
+        font-family: Roboto;
+        font-weight: var(--Roboto-Bold);
+    }
+    .info-lainnya .info-lists .info-event .description p {
+        font-size: 0.92rem;
+        font-family: Roboto;
+        font-weight: var(--Roboto-Regular);
+    }
+
+    /* Info lainnya */
+
+    /* Galeri Sekolah*/
+
+    .school-galleries{
+        font-family: Poppins;
+        font-weight: var(--Poppins-SemiBold);
+        max-width: 100%;
+        min-height: 80vh;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 4%;
+        /* display: flex;
+        align-items: center; */
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    /* Galeri Sekolah*/
+}
+
+/* 1114px width */
+
+/* 884px Width */
+
+@media all and (max-width: 884px){
+    /* Info lainnya */
+    
+    .info-lainnya{
+        width: 39.5rem;
+        height: 350px;
+        margin-left: 10px;
+        /* background: green; */
+        padding-right: 10px;
+    }
+    .info-lainnya h1{
+        font-family: Poppins;
+        font-weight: var(--Poppins-SemiBold);
+    }
+    .info-lainnya .info-lists{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 300px;
+    }
+    .info-lainnya .info-lists .info-event .image{
+        width: 130px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #b1b0b0;
+    }
+    .info-lainnya .info-lists .info-event .image img {
+        width: 35px;
+    }
+    .info-lainnya .info-lists .info-event {
+        display: flex;
+        align-items: center;
+    }
+    .info-lainnya .info-lists .info-event .description{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-lainnya .info-lists .info-event .description h1 {
+        font-size: 17px;
+        font-family: Roboto;
+        font-weight: var(--Roboto-Bold);
+    }
+    .info-lainnya .info-lists .info-event .description p {
+        font-size: 0.90rem;
+        font-family:roboto;
+        font-weight: var(--Roboto-Regular);
+    }
+
+    /* Info lainnya */
+
+    /* Galeri Sekolah */
+
+    .school-galleries{
+        /* background: green; */
+        font-family: Poppins;
+        font-weight: var(--Poppins-SemiBold);
+        max-width: 100%;
+        min-height: 80vh;
+        padding-left: 0;
+        padding-right: 0;
+        padding-top: 4%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .school-galleries .gallery-grid{
+        margin-top: 20px;
+        width: 100%;
+        min-height: 50vh;
+        display: grid;
+        grid-gap: 1em;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit,minmax(250px, 330px));
+        grid-template-rows: repeat(auto-fit,minmax(230px, 230px));
+    }
+
+    /* Galeri Sekolah */
+
+     /* Profil Sekolah */
+
+     .school-profile{
+        max-width: 100%;
+        min-height: 50vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .school-profile .headlines{
+        width: 45%;
+        word-break: break-word;
+    }
+    .school-profile .headlines h1 {
+        margin-block-start: 0;
+        /* background: blue; */
+        font-size: 1.6em;
+        position: relative;
+        font-family: roboto;
+        color: var(--blue-navbar-secondary);
+        font-weight: var(--Roboto-Bold);
+    }
+    #line-profile {
+        margin-top: 5px;
+        width: 200px;
+        height: 5px;
+        background: var(--blue-navbar-secondary);
+        transition: width 500ms ease-in-out;
+    }
+    .school-profile .headlines p{
+        font-size: 1rem;
+        /* background: blue; */
+        word-break: keep-all;
+        width: 46vw;
+        font-family: roboto;
+        font-weight: var(--Roboto-Regular);
+        margin-top: 30px;
+    }
+    .school-profile .photos{
+        margin-left: 30px;
+        position: relative;
+        width: 36vw;
+        height: 24vh;
+        /* background: green; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .school-profile .photos .photo-carousel{
+        width:30vw;
+        height: 18vh;
+        /* background: lime; */
+        overflow: hidden;
+        display: flex;
+        position: relative;
+    }
+    .d-pattern{
+        position: absolute;
+        bottom: 0;
+        width: 6.8rem;
+        left: 0;
+    }
+    .d-pattern2{
+        position: absolute;
+        width: 6.8rem;
+        top: 0;
+        right: 0;
+    }
+    .frame-top{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .frame-bottom{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }    
+
+    /* Profil Sekolah */
+}
+
+/* 884px Width */
+
+/* 834px width */
+
+@media all and (max-width: 834px){
+    .header-nav .header-information .clock {
+        width: 96px;
+        overflow: hidden;
+    }
+    .info-section {
+        max-width: 100%;
+        min-height: 65vh;
+        padding-top: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* background: green; */
+    }
+    .info-lainnya{
+        margin-top: 10px;
+        width: 39.5rem;
+        height: 290px;
+        margin-left: 10px;
+        /* background: crimson; */
+        padding-right: 10px;
+    }
+    .info-lainnya h1{
+        font-family: Poppins;
+        font-weight: var(--Poppins-SemiBold);
+    }
+    .info-lainnya .info-lists{
+        /* background: green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 242px;
+    }
+    .info-lainnya .info-lists .info-event .image{
+        width: 110px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #b1b0b0;
+    }
+    .info-lainnya .info-lists .info-event .image img {
+        width: 35px;
+    }
+    .info-lainnya .info-lists .info-event {
+        display: flex;
+        align-items: center;
+    }
+    .info-lainnya .info-lists .info-event .description{
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .info-lainnya .info-lists .info-event .description h1 {
+        font-size: 17px;
+        font-family: Roboto;
+        font-weight: var(--Roboto-Bold);
+    }
+    .info-lainnya .info-lists .info-event .description p {
+        font-size: 0.90rem;
+        font-family:roboto;
+        font-weight: var(--Roboto-Regular);
+    }
+
+    /* Info lainnya */
+
+    /* Info terkini */
+    .info-terkini{
+        width: 39rem;
+        height: 350px;
+        padding-left: 0;
+    }
+    /* Info terkini */
+}
+
+/* 834px width */
+
+/* 428px Width */
+
+@media all and (max-width: 428px){
+    .hero-section .title-hero h1{
+        font-size: 2.5rem;
+        color: white;
+        font-family: Microsoft New Tai Lue;
+    }
+    .hero-section .title-hero p{
+        font-size: 16px;
+        color: white;
+        font-family: Roboto;
+        font-weight: var(--Roboto-Regular);
+    }
+
+    /* Info terkini */
+    .info-terkini{
+        width: 100%;
+        height: 350px;
+        padding-left: 0;
+    }
+    /* Info terkini */
+
+    .info-section {
+        max-width: 100%;
+        min-height: 65vh;
+        padding-top: 2em;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* background: green; */
+    }
+    .info-lainnya{
+        margin-top: 10px;
+        width: 100%;
+        height: 290px;
+        margin-left: 10px;
+        /* background: crimson; */
+        padding-right: 10px;
+    }
+    .info-lainnya .info-lists{
+        /* background: green; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 280px;
+    }
+    .welcome-section{
+        max-width: 100%;
+        min-height: 60vh;
+        /* background: green; */
+        margin-top: 50px;
+    }
+    .welcome-section .selamat-datang{
+        font-family: Poppins;
+        font-size: .90rem;
+        text-align: center;
+        font-weight: var(--Poppins-SemiBold);
+        width: 100%;
+        min-height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background: crimson; */
+    }
+    /* Profil Sekolah */
+
+    .school-profile{
+        max-width: 100%;
+        min-height: 50vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .school-profile .headlines{
+        width: 95%;
+        word-break: break-word;
+    }
+    .school-profile .headlines h1 {
+        margin-block-start: 0;
+        /* background: blue; */
+        font-size: 1.6em;
+        position: relative;
+        font-family: roboto;
+        color: var(--blue-navbar-secondary);
+        font-weight: var(--Roboto-Bold);
+    }
+    #line-profile {
+        margin-top: 5px;
+        width: 200px;
+        height: 5px;
+        background: var(--blue-navbar-secondary);
+        transition: width 500ms ease-in-out;
+    }
+    .school-profile .headlines p{
+        font-size: 1rem;
+        /* background: blue; */
+        word-break: keep-all;
+        width: 100%;
+        font-family: roboto;
+        font-weight: var(--Roboto-Regular);
+        margin-top: 30px;
+    }
+    .school-profile .photos{
+        margin-left: 0;
+        margin-top: 20px;
+        position: relative;
+        width: 95%;
+        height: 35vh;
+        /* background: green; */
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .school-profile .photos .photo-carousel{
+        width: 90%;
+        height: 30vh;
+        /* background: lime; */
+        overflow: hidden;
+        display: flex;
+        position: relative;
+    }
+    .d-pattern{
+        position: absolute;
+        bottom: 0;
+        width: 6.8rem;
+        left: 0;
+    }
+    .d-pattern2{
+        position: absolute;
+        width: 6.8rem;
+        top: 0;
+        right: 0;
+    }
+    .frame-top{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .frame-bottom{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }    
+
+    /* Profil Sekolah */
+
+    /* Article section */
+    .article-section{
+        max-width: 100%;
+        min-height: 65vh;
+        margin-top: 20px;
+    }
+    .article-section .article-title{
+        font-family: poppins;
+        font-weight: var(--Poppins-SemiBold);
+        width: 100%;
+        min-height: 50px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* 428px Width */
+
+/* 393px width */
+
+@media all and (max-width: 393px){
+    .info-lainnya{
+        /* background: green; */
+        width: 100%;
+        height: 350px;
+    }
+    .info-lainnya .info-lists {
+        margin-top: 10px;
+    }
+    .welcome-section .selamat-datang{
+        font-family: Poppins;
+        font-size: .90rem;
+        text-align: center;
+        font-weight: var(--Poppins-SemiBold);
+        width: 100%;
+        min-height: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background: crimson; */
+    }
+}
+
+/* 393px width */
+
+/* 360px Width */
+
+@media all and (max-width: 360px){
+    /* Footer Class */
+
+    .footer .social-media .icon {
+        opacity: 0.5;
+        color: var(--white-low-1);
+        font-size: 1rem;
+        margin-left: 3px;
+        transition: opacity 100ms ease-in-out;
+    }
+
+    .footer{
+        font-family: roboto;
+        font-weight: var(--Roboto-Regular);
+        color: var(--white-default);
+        padding-top: 4em;
+        padding-bottom: 1em;
+        background: var(--blue-navbar-primary);
+        max-width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    footer{
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 5em;
+        max-width: 100%;
+        min-height: 50vh;
+        background: var(--blue-navbar-primary);
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 400px));
+        color: var(--white-default);
+    }
+    /* Footer Class */
+
+    .info-lainnya{
+        /* background: green; */
+        width: 100%;
+        height: 308px;
+        padding: 0;
+    }
+    .info-lainnya .info-lists {
+        width: 100%;
+        height: 260px;
+        /* background: crimson; */
+        margin-top: 0px;
+    }
+    .info-lainnya .info-lists .info-event .description h1 {
+        font-size: 14px;
+        font-family: Roboto;
+        font-weight: var(--Roboto-Bold);
+    }
+    .info-lainnya .info-lists .info-event .description p {
+        font-size: 0.80rem;
+        font-family:roboto;
+        font-weight: var(--Roboto-Regular);
+    }
+    .info-lainnya .info-lists .info-event .image{
+        width: 100px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #b1b0b0;
+    }
+    .info-lainnya .info-lists .info-event .image img {
+        width: 20px;
+    }
+    .hero-section .title-hero h1{
+        font-size: 2.2rem;
+        color: white;
+        font-family: Microsoft New Tai Lue;
+    }
+    .hero-section .title-hero p{
+        font-size: 14px;
+        color: white;
+        font-family: Roboto;
+        font-weight: var(--Roboto-Regular);
+    }
+}
+
+/* 360px Width */
+
