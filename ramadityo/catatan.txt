@@ -1,0 +1,5 @@
+Color Palletes
+
+Green light dc143c 
+
+content: '\f104';
