@@ -10,7 +10,7 @@ $(function() {
         zindex: "auto", 
         scrollspeed: 70, 
         mousescrollstep: 50, 
-        touchbehavior: false, 
+        touchbehavior: true, 
         emulatetouch: false, 
         hwacceleration: true, 
         boxzoom: false, 
