@@ -7,7 +7,7 @@ $(function() {
         cursorwidth: "8px", 
         cursorborder: "1px solid transparent", 
         cursorborderradius: "5px", 
-        zindex: "auto", 
+        zindex: "999", 
         autohidemode: true,
         hidecursordelay: 400,
         cursorfixedheight: false,
