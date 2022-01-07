@@ -34,6 +34,7 @@ const hamburger = $(".menu");
 hamburger.click(function(){
     $(".span").toggleClass("toggle");
     $("ul").toggleClass("toggle");
+    $("html").toggleClass("hidden");
     $(".about").toggleClass("hidden");
     $(".myskills").toggleClass("hidden");
     $(".myJourney").toggleClass("hidden");
