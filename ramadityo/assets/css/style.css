@@ -30,17 +30,11 @@
 }
 
 /* Font Face Futura PT */
-html {
-  overflow-x: hidden;
-}
-html.hidden{
-  overflow: hidden;
-}
 body {
   max-width: 100%;
   height: 100vh;
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
   transition: background 300ms ease;
 }
 ::-webkit-scrollbar {
