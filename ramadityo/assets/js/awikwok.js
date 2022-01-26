@@ -10,11 +10,6 @@
 //     height: 0,
 //     ease: "Expo.easeInOut"
 // })
-gsap.to("body", {
-    duration: .5,
-    height: 0,
-    ease: "Expo.easeInOut"
-})
 $(window).on('load', function() {
     // function progress(){
     //     var percent = document.querySelector('.percent');
