@@ -1,9 +1,0 @@
-.SmoothScroll {
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .container {
-    width: 100vw;
-  }
