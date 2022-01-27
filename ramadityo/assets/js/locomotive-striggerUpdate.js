@@ -10,6 +10,9 @@ const locoScroll = new LocomotiveScroll({
   smooth: true,
   smartphone: {
     smooth: true
+  },
+  tablet: {
+    smooth: true
   }
 });
 // each time Locomotive Scroll updates, tell ScrollTrigger to update too (sync positioning)
