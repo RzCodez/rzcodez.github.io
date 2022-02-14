@@ -3,19 +3,17 @@ tl.to(".offline", {
     duration: 1,
     width: ".5rem",
     height: "100px",
-    // transformOrigin: "0% 30%",
     ease: "power4.inOut"
 })
 tl.to(".offline", {
     duration: 1,
-    width: "30rem",
+    width: "100%",
     height: "100px",
-    // transformOrigin: "0% 30%",
     ease: "expo.inOut"
 })
 tl.from(".word", {
     duration: 1,
-    y: "70%",
+    y: "100%",
     ease: "power4.inOut"
 })
 tl.from(".kosong-satu", {
@@ -37,4 +35,18 @@ gsap.from(".rei-ichi", {
     opacity: 0,
     y:30,
     ease: "expo.inOut"
+})
+
+var mbtl = gsap.timeline();
+mbtl.to(".offline-mb", {
+    duration: 1,
+    width: ".5rem",
+    height: "100px",
+    ease: "power4.inOut"
+})
+mbtl.to(".offline-mb", {
+    duration: 1,
+    width: "90%",
+    height: "100px",
+    ease: "power4.inOut"
 })
