@@ -1,0 +1,146 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500&family=Karla:wght@300;400;500;600;700&display=swap'); */
+@font-face {
+    font-family: chirp-regular;
+    src: url(./chirp-regular-web.woff);
+}
+@font-face {
+    font-family: chirp-bold;
+    src: url(./chirp-bold-web.woff);
+}
+@font-face {
+    font-family: chirp-medium;
+    src: url(./chirp-medium-web.woff);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    color: white;
+    font-family: 'chirp-regular', sans-serif;
+}
+body{
+    height: 100vh;
+    max-width: 100%;
+    overflow: hidden;
+    background: black;
+}
+.header{
+    max-width: 100%;
+    height: 19vh;
+    background: url(./25.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.header nav{
+    max-width: 100%;
+    /* height: 50px; */
+    /* background: crimson; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+}
+.svg-nav{
+    width: 25px;
+    fill: white;
+}
+.circle-button{
+    background: rgb(123, 91, 128, .5);
+    /* padding: 5px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.other-opt{
+    display: flex;
+    align-items: center;
+}
+.profile{
+    max-width: 100%;
+    padding: 0 20px 0 20px;
+    /* background: green; */
+}
+.profile-1{
+    max-width: 100%;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: crimson; */
+}
+.circle-prof{
+    width: 100px;
+    height: 100px;
+    transform: translateY(-30%);
+    background: black;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+.prof-pic{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.edit-prof{
+    background: black;
+    /* font-family: 'Fira Sans', sans-serif; */
+    font-family: "chirp-medium", sans-serif;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    /* letter-spacing: 1.3px; */
+    width: 135px;
+    height: 45px;
+    border-radius: 30px;
+}
+.nickname{
+    font-family: 'chirp-bold', sans-serif;
+}
+.username{
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: .7;
+    letter-spacing: .5px;
+}
+.info{
+    display: flex;
+    align-items: center;
+}
+.info .loc{
+    display: flex;
+    align-items: center;
+}
+.link {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.dashboard-tweet{
+    max-width: 100%;
+    background: maroon;
+    margin-top: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.dashboard-tweet .button-dash{
+    height: 100%;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    margin-left: 20px;
+    justify-content: center;
+    padding: 0 5px 0 5px;
+    font-family: chirp-medium;
+    background: green;
+}
