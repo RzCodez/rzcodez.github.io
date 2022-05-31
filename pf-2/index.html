@@ -9,7 +9,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/TextPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script> -->
+    <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./assets/css/loco.css">
@@ -198,7 +199,102 @@
         <div class="block-white"></div>
         <!-- <div class="block-1"></div> -->
       </div>
+      <div id="progress" class="line-progress"></div>
     </div>
+    <script>
+      
+      let progress = document.getElementById('progress');
+      // let gallery = document.getElementById('gallery');
+      
+      var queue = new createjs.LoadQueue(false);
+  
+      queue.on("fileload", handleFileComplete);
+      queue.on('progress', event => {
+          let progress = Math.floor(event.progress * 100);
+          this.progress.style.width = progress+'%';
+          if (progress == 100) {
+              console.log('all done');
+              gsap.to(".line-progress", {
+                duration: 1,
+                delay: 1,
+                clipPath: "polygon(100% 0, 100% 0%, 100% 100%, 100% 100%)",
+                ease: "circ.out"
+              })
+          }
+      })
+      queue.on('complete', event => {
+          // gallery.classList.add('fadeIn');
+          // setTimeout(() => {
+          //     progress.classList.add('expand');
+          // },500)
+          var cp = gsap.timeline();
+  cp.to(".loading-text", {
+    duration: .5,
+    text: {
+      value: "WELCOME",
+      ease: "expo.inOut"
+    }
+  })
+  cp.to(".block-white", {
+    duration: .5,
+    opacity: 1,
+    backgroundColor: "whitesmoke",
+    ease: "circ.out"
+  })
+  
+  cp.to(".transition1", {
+      duration: 1,
+      // clipPath:"polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+      ease: "power4.inOut"
+  }, 1)
+  setTimeout(() => {
+      document.querySelector(".transition1").style.display= "none";
+  }, 5000000000)
+
+  cp.from(".animate-load", {
+      y: "10px",
+      opacity: 0,
+      duration: .5,
+      ease: "circ.out",
+      stagger: .2
+  }, 2);
+  cp.from(".lines-ramz", {
+    duration: 1,
+    scaleX: 0,
+    transformOrigin: "left",
+    ease: "expo.inOut"
+  }, 2.3);
+  cp.from(".bounce-title", {
+    duration: 1,
+    y: -40,
+    opacity: 0,
+    ease: "bounce.out"
+  }, 2.4)
+  const text = new SplitType('.reveal-text-ramz', {
+    types: 'chars',
+    absolute: true
+  })
+  gsap.from(text.chars, {
+    duration: 2,
+    y: 150,
+    stagger: 0.03,
+    ease: "expo.inOut"
+  }, 1.4)
+      })
+      queue.loadFile('https://s3.amazonaws.com/coursetro/stuff/mountains-clouds.jpg');
+      // queue.loadFile('https://s3.amazonaws.com/coursetro/stuff/adventure-alpine-alps-714258.jpg');
+      // queue.loadFile('https://s3.amazonaws.com/coursetro/stuff/170407220921-07-iconic-mountains-pitons-restricted.jpg');
+      // queue.loadFile('https://s3.amazonaws.com/coursetro/stuff/170407220916-04-iconic-mountains-matterhorn-restricted.jpg');
+
+      function handleFileComplete(event) {
+        
+      var item = event.item; 
+      var type = item.type;
+
+
+      }
+
+  </script>
     <!-- <script src="./assets/js/imagesloaded.pkgd.min.js"></script> -->
     <!-- <script src="./assets/js/imagesEffect.js"></script> -->
 

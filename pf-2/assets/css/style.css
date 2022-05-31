@@ -69,6 +69,18 @@ body{
     font-size: 5rem;
     font-family: JakartaPlusExtraLight;
 }
+.line-progress{
+    background: #0a0a0a;
+	position: fixed;
+	z-index: 1501;
+	top: 50%;
+    left: 20rem;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 2px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    transition: width 1s cubic-bezier(0.77,0,0.18,1);
+}
 /* .container-blocks{
     width: 3em;
     height: 5px;

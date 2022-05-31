@@ -23,64 +23,64 @@
 // };
 
 
-Pace.on("done", () =>{
-    var cp = gsap.timeline();
-    cp.to(".loading-text", {
-      duration: .5,
-      text: {
-        value: "WELCOME",
-        ease: "expo.inOut"
-      }
-    })
-    cp.to(".block-white", {
-      duration: .5,
-      opacity: 1,
-      backgroundColor: "whitesmoke",
-      ease: "circ.out"
-    })
+// Pace.on("done", () =>{
+//     var cp = gsap.timeline();
+//     cp.to(".loading-text", {
+//       duration: .5,
+//       text: {
+//         value: "WELCOME",
+//         ease: "expo.inOut"
+//       }
+//     })
+//     cp.to(".block-white", {
+//       duration: .5,
+//       opacity: 1,
+//       backgroundColor: "whitesmoke",
+//       ease: "circ.out"
+//     })
     
-    cp.to(".transition1", {
-        duration: 1,
-        clipPath:"polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-        // ease: "circ.out"
-        ease: "power4.inOut"
-    }, 1)
-    setTimeout(() => {
-        document.querySelector(".transition1").style.display= "none";
-    }, 5000)
+//     cp.to(".transition1", {
+//         duration: 1,
+//         clipPath:"polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+//         // ease: "circ.out"
+//         ease: "power4.inOut"
+//     }, 1)
+//     setTimeout(() => {
+//         document.querySelector(".transition1").style.display= "none";
+//     }, 5000)
 
-    cp.from(".animate-load", {
-        y: "10px",
-        opacity: 0,
-        duration: .5,
-        ease: "circ.out",
-        stagger: .2
-    }, 2);
-    cp.from(".lines-ramz", {
-      duration: 1,
-      scaleX: 0,
-      transformOrigin: "left",
-      ease: "expo.inOut"
-    }, 2.3);
-    cp.from(".bounce-title", {
-      duration: 1,
-      y: -40,
-      opacity: 0,
-      ease: "bounce.out"
-    }, 2.4)
-    const text = new SplitType('.reveal-text-ramz', {
-      types: 'chars',
-      absolute: true
-    })
-    gsap.from(text.chars, {
-      duration: 2,
-      y: 150,
-      // transform: "rotateY(3.142rad)",
-      // opacity: 0,
-      stagger: 0.03,
-      ease: "expo.inOut"
-    }, 1.4)
-})
+//     cp.from(".animate-load", {
+//         y: "10px",
+//         opacity: 0,
+//         duration: .5,
+//         ease: "circ.out",
+//         stagger: .2
+//     }, 2);
+//     cp.from(".lines-ramz", {
+//       duration: 1,
+//       scaleX: 0,
+//       transformOrigin: "left",
+//       ease: "expo.inOut"
+//     }, 2.3);
+//     cp.from(".bounce-title", {
+//       duration: 1,
+//       y: -40,
+//       opacity: 0,
+//       ease: "bounce.out"
+//     }, 2.4)
+//     const text = new SplitType('.reveal-text-ramz', {
+//       types: 'chars',
+//       absolute: true
+//     })
+//     gsap.from(text.chars, {
+//       duration: 2,
+//       y: 150,
+//       // transform: "rotateY(3.142rad)",
+//       // opacity: 0,
+//       stagger: 0.03,
+//       ease: "expo.inOut"
+//     }, 1.4)
+// })
 // $(".FxFP").ripples({
 //     imageUrl: null,
 //     resolution: 300,
