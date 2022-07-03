@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://ramadityo.github.io/" />
+	<meta property="og:site_name" content="Ramadityo" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="https://rzcodez.github.io/ramadityo/media/png/web-preview.png">
+	<meta name="description" content="Welcome to my personal portfolio!, actually i'm still beginner so please be cooperative to me and thanks for visiting my website!">
+    <meta name="keywords" content="RzCodez,Ramz,Kafka Ramadityo,Ramadityo,Tyo,Kafka">
+   	<meta name="author" content="Kafka Ramadityo">
+    <meta name="theme-color" content="#1C1C1C">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/photos/favicon.png">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/breakpoints.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/TextPlugin.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/pace/1.0.2/pace.min.js"></script> -->
+    <script src="https://code.createjs.com/1.0.0/preloadjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./assets/css/loco.css">
+    <script src="https://unpkg.com/split-type"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.css">
+    <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+    <script src="https://unpkg.com/smooth-scrollbar@latest/dist/plugins/overscroll.js"></script> -->
+    <title>Ramadityo | Front End Web Dev</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Poppins:wght@500;600&family=Noto+Sans+JP:wght@500&family=Raleway:wght@300;400;500&display=swap');
+      /* @font-face {font-family: JakartaPlusRegular;src: url(./assets/fonts/PlusJakartaSans-Regular.woff2);}@font-face {font-family: JakartaPlusBold;src: url(./assets/fonts/PlusJakartaSans-Bold.woff2);}@font-face {font-family: JakartaPlusBoldItalic;src: url(./assets/fonts/PlusJakartaSans-BoldItalic.woff2);}@font-face {font-family: JakartaPlusSemibold;src: url(./assets/fonts/PlusJakartaSans-SemiBold.woff2);}@font-face {font-family: JakartaPlusLight;src: url(./assets/fonts/PlusJakartaSans-Light.woff2);}@font-face {font-family: JakartaPlusExtraLight;src: url(./assets/fonts/PlusJakartaSans-ExtraLight.woff2);} */
+      @font-face {font-family: NewYorkSerif;src: url(./assets/fonts/NewYork.otf);} @font-face{font-family: Vogue;src: url(./assets/fonts/Vogue.ttf)}@font-face{font-family: JakartaPlusLight;src: url(./assets/fonts/PlusJakartaSans-Light.woff2)}
+      @font-face {
+        font-family: HelveticaNowDisplay-Bold;
+        src: url(./assets/fonts/HelveticaNowDisplay-Bold.woff2);
+      }
+      @font-face {
+        font-family: HelveticaNowDisplay-ExtraBold;
+        src: url(./assets/fonts/HelveticaNowDisplay-ExtraBold.woff2);
+      }
+      @font-face {
+        font-family: HelveticaNowDisplay-regular;
+        src: url(./assets/fonts/HelveticaNowDisplay-Regular.woff2);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+    <div class="cursor-follower2"></div>
+    <nav>
+      <div class="exclution logo animate-load">
+        <a href="#">
+          <p style="display: flex;" class="colorGSAP">ramadityo.</p>
+          
+        </a>
+        <div class="circ-1"></div>
+        <div class="circ-2"></div>
+      </div>
+      <ul>
+        <li class="exclution animate-load">
+          <a href="#home" class="nav-links colorGSAP" data-scroll-to>HOME</a>
+        </li>
+        <li class="exclution animate-load "><a href="#AboutSec" class="nav-links colorGSAP" data-scroll-to>ABOUT</a></li>
+        <li class="exclution animate-load"><a href="#contact" class="nav-links colorGSAP" data-scroll-to>CONTACTS</a></li>
+      </ul>
+    </nav>
+    <div class="main-container">
+      <div class="main-page" id="home">
+        <div class="hero-section">
+          <div class="headlines">
+            <!-- <div class="image-cursor amiya"></div> -->
+            <p class="welcome-text reveal-text-ramz">Hello,</p>
+          
+            <div class="welcome-text" style="display: flex;">
+              <p class="reveal-text-ramz">I'm</p>
+              <div class="serif">
+                <span class="reveal-text-ramz">Ramz</span>
+                <span class="lines-ramz"></span>
+              </div>
+              <p class="bounce-title">.</p>
+            </div>
+          </div>
+        </div>
+        <div class="fade-gradient"></div>
+      </div>
+      <div class="about" id="AboutSec">
+        <div class="about-description">
+          <h1 class="FxFP headlinesText text-about">
+            <span class="reveal-text">A</span><span class="reveal-text">B</span><span class="reveal-text">O</span><span class="reveal-text">U</span><span class="reveal-text">T</span>
+            <span class="reveal-text" style="margin-left: 15px;">M</span><span class="reveal-text">E</span>
+            <div class="bounce">.</div>
+            <span class="lines"></span>
+          </h1>
+          <p class="descriptionText about-desc">
+            i'm an Front-End Web Developer and, and i was born in Samarinda and I was High School Student at Vocational School (SMKN 7 Samarinda) majoring as Network Engineer Student.
+            <span class="blank-slide"></span>
+          </p>
+          <p class="descriptionText about-desc">
+            I started Programming in 2021 and learning HTML, CSS, JS, also other stuff like Mikrotik and gaming!, and also doing some photo editing with Photoshop in Photo Manipulation and Web Design. Take a look at my work and if you'd like to discuss your project, please let me know.
+            <span class="blank-slide"></span>
+          </p>
+          
+          <div class="social-media">
+            <p class="exclution soc-links">
+              <a href="#">LINKEDIN</a>
+              <svg version="1.1" class="soc-links-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 312 330.8" style="enable-background:new 0 0 312 330.8;" xml:space="preserve">
+              <style type="text/css">
+                .soc-links-arrow{fill:none;stroke:#fff;stroke-width:25;stroke-linejoin:round;}
+              </style>
+              <title>Arrow Back</title>
+              <path class="st0" d="M12,159.1l144-144l144,144 M156,26.6v300.5"/>
+            </svg>
+            </p>
+            <p class="exclution soc-links" style="margin-top: 5px;">
+              <a href="#">FACEBOOK</a>
+              <svg version="1.1" class="soc-links-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 312 330.8" style="enable-background:new 0 0 312 330.8;" xml:space="preserve">
+              <style type="text/css">
+                .soc-links-arrow{fill:none;stroke:#fff;stroke-width:25;stroke-linejoin:round;}
+              </style>
+              <title>Arrow Back</title>
+              <path class="st0" d="M12,159.1l144-144l144,144 M156,26.6v300.5"/>
+            </svg>
+            </p>
+            <p class="exclution soc-links" style="margin-top: 5px;">
+              <a href="#">INSTAGRAM</a>
+              <svg version="1.1" class="soc-links-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 312 330.8" style="enable-background:new 0 0 312 330.8;" xml:space="preserve">
+              <style type="text/css">
+                .soc-links-arrow{fill:none;stroke:#fff;stroke-width:25;stroke-linejoin:round;}
+              </style>
+              <title>Arrow Back</title>
+              <path class="st0" d="M12,159.1l144-144l144,144 M156,26.6v300.5"/>
+            </svg>
+            </p>
+            <p class="exclution soc-links" style="margin-top: 5px;">
+              <a href="https://codepen.io/ramzxd" target="_blank">CODEPEN</a>
+              <svg version="1.1" class="soc-links-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 312 330.8" style="enable-background:new 0 0 312 330.8;" xml:space="preserve">
+              <style type="text/css">
+                .soc-links-arrow{fill:none;stroke:#fff;stroke-width:25;stroke-linejoin:round;}
+              </style>
+              <title>Arrow Back</title>
+              <path class="st0" d="M12,159.1l144-144l144,144 M156,26.6v300.5"/>
+            </svg>
+            </p>
+            <p class="exclution soc-links" style="margin-top: 5px;">
+              <a href="#">DISCORD</a>
+              <svg version="1.1" class="soc-links-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 312 330.8" style="enable-background:new 0 0 312 330.8;" xml:space="preserve">
+              <style type="text/css">
+                .soc-links-arrow{fill:none;stroke:#fff;stroke-width:25;stroke-linejoin:round;}
+              </style>
+              <title>Arrow Back</title>
+              <path class="st0" d="M12,159.1l144-144l144,144 M156,26.6v300.5"/>
+            </svg>
+            </p>
+            <p class="exclution soc-links" style="margin-top: 5px;">
+              <a href="#">TWITTER</a>
+              <svg version="1.1" class="soc-links-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              viewBox="0 0 312 330.8" style="enable-background:new 0 0 312 330.8;" xml:space="preserve">
+              <style type="text/css">
+                .soc-links-arrow{fill:none;stroke:#fff;stroke-width:25;stroke-linejoin:round;}
+              </style>
+              <title>Arrow Back</title>
+              <path class="st0" d="M12,159.1l144-144l144,144 M156,26.6v300.5"/>
+            </svg>
+            </p>
+          </div>
+        </div>
+        <div class="person-reveal">
+          <div class="person-reveal2" style="width: 100%;height: 100%;overflow: hidden;">
+            <div class="person"></div>
+            <span class="blank-slide-person"></span>
+            
+          </div>
+          <!-- Photo by Daniel Olah https://unsplash.com/s/photos/earth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText on Unsplash -->
+          <!-- Photo by Zhimai Zhang https://unsplash.com/s/photos/earth?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText on Unsplash -->
+        </div>
+      </div>
+      <div class="projects">
+        <div class="project-desc">
+          <div class="hd-dsc-text">
+            <div class="ct-no-hidden" style="position: relative;width: max-content;">
+              <p class="FxFP headlinesText">
+                <span class="pr-text">P</span><span class="pr-text">R</span><span class="pr-text">O</span><span class="pr-text">J</span><span class="pr-text">E</span><span class="pr-text">C</span><span class="pr-text">T</span><span class="pr-text">S</span>
+                <span class="lines-title-project"></span>
+              </p>
+              <span class="pr-count">
+                <span style="position: relative;">
+                  <span class="pr-num">06</span>
+                  <span class="pr-available">Project available!</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <p class="descriptionText pr-desc">
+            These are all the best projects I've ever made and also many projects soon!, check out my available projects <a class="anchor exclution" href="#">here!</a>
+          </p>
+        </div>
+        <div class="project-items">
+          <div class="grid-item pm">
+            <p class="grid-name">Photo Manipulation</p>
+            <div class="grid-items">
+              <div class="name-projects">
+                <a href="#" class="circ-projects">
+                  <p class="text-view">View</p>
+                  <p class="text-view">Project</p>
+                </a>
+              </div>
+              <div class="grid-inner"></div>
+            </div>
+          </div>
+          <div class="grid-item wd">
+            <p class="grid-name">Web Design</p>
+            <div class="grid-items">
+              <div class="name-projects">
+                <a href="#" class="circ-projects">
+                  <p class="text-view">View</p>
+                  <p class="text-view">Project</p>
+                </a>
+              </div>
+              <div class="grid-inner"></div>
+            </div>
+          </div>
+          <div class="grid-item as">
+            <p class="grid-name">Anime Style</p>
+            <div class="grid-items">
+              <div class="name-projects">
+                <a href="#" class="circ-projects">
+                  <p class="text-view">View</p>
+                  <p class="text-view">Project</p>
+                </a>
+              </div>
+              <div class="grid-inner"></div>
+            </div>
+          </div>
+          <div class="grid-item ap">
+            <p class="grid-name">Arduino Projects</p>
+            <div class="grid-items">
+              <div class="name-projects">
+                <a href="#" class="circ-projects">
+                  <p class="text-view">View</p>
+                  <p class="text-view">Project</p>
+                </a>
+              </div>
+              <div class="grid-inner"></div>
+            </div>
+          </div>
+          <div class="grid-item am">
+            <p class="grid-name">Anime Minimalist</p>
+            <div class="grid-items">
+              <div class="name-projects">
+                <a href="#" class="circ-projects">
+                  <p class="text-view">View</p>
+                  <p class="text-view">Project</p>
+                </a>
+              </div>
+              <div class="grid-inner"></div>
+            </div>
+          </div>
+          <div class="grid-item wp">
+            <p class="grid-name">Web Projects</p>
+            <div class="grid-items">
+              <div class="name-projects">
+                <a href="#" class="circ-projects">
+                  <p class="text-view">View</p>
+                  <p class="text-view">Project</p>
+                </a>
+              </div>
+              <div class="grid-inner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner-project">
+        <div class="img-banner">
+          <div class="banner-image"></div>
+          <canvas id="noise" class="grain desktop">
+          </canvas>
+        </div>
+      </div>
+      <div class="contacts" id="contact">
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+        <p class="title-contact">Have a<br>good day!<span class="wave">👋</span></p>
+        <p class="subtitle-contact">don't forget to contact me 😉</p>
+        <div class="contact-info-ct">
+          <p class="contact-info">+6269696969</p>
+          <p class="contact-info">ramzakeong@gmail.com</p>
+        </div>
+        <!-- <div class="available-work">
+          <p class="availableWorkInner"><span class="arrow-blink d-none">>></span> Available for work! <span class="arrow-blink d-none"><<</span></p>
+          <div class="availableWorkInner downloadCV">
+            <p>download cv</p>
+            <lord-icon
+                src="https://cdn.lordicon.com/biwxmlnf.json"
+                trigger="loop"
+                colors="primary:#ffffff"
+                state="hover-1"
+                >
+            </lord-icon>
+          </div>
+          
+        </div> -->
+        <!-- <div class="bannerContact">
+          <p class="social-media-contact">ramz@akeong.com</p>
+          <p class="social-media-contact">+62948493843</p>
+          <span class="line-contact"></span>
+        </div>
+        <div class="social-media-footer">
+          <p class="copyright">©2022</p>
+          <ul>
+            <li><a href="#">facebook</a></li>
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">linkedin</a></li>
+            <li><a href="#">discord</a></li>
+          </ul>
+        </div> -->
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <div class="transition1">
+      <div class="container-blocks">
+        <div class="loading-text">
+          <span>
+            <p>Welcome</p>
+            <p style="font-family: 'Noto Sans JP', sans-serif;">こんにちは</p>
+            <p>Hai!</p>
+            <p>Hola</p>
+            <p>مرحبًا</p>
+            <p>欢迎</p>
+            <p>Ciao</p>
+            <p>Bonjour</p>
+            <p>Привет</p>
+            <p>Welcome</p>
+          </span>
+        </div>
+      </div>
+      <div id="progress" class="line-progress"></div>
+      <div class="abs-container">
+        <div id="DigitalCLOCK" class="clock" onload="showTime()"></div>
+        <script src="./assets/js/clock.js"></script>
+      </div>
+      <div class="location">
+        <p>Banten,<br>North Tanggerang</p>
+        <script src="./assets/js/clock.js"></script>
+      </div>
+      <div class="load-percentage">
+        <div class="num-load">
+          <span class="scrolltextComplete">
+            <p><span id="num-load">0</span>%</p>
+          </span>
+        </div>
+      </div>
+      <div class="loading-prg">
+        <div class="scrollText">
+          <span class="scrolltextComplete-Load">
+            <p>Loading</p>
+            <p>Complete!</p>
+          </span>
+        </div>
+      </div>
+      <!-- <div class="abs-container">
+        
+      </div> -->
+    </div>
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/nyenye.js"></script>
+    <script src="./assets/js/banner-json.js"></script>
+    <script src="./assets/js/gakjelas.js"></script>
+  </body>
+</html>
